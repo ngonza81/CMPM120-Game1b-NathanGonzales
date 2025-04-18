@@ -1,10 +1,10 @@
 {
-    "Title": "My Home!",
+    "Title": "Kain Tayo!",
     "Credits": "Created by Nathan Gonzales (ngonza81@ucsc.edu).",
-    "InitialLocation": "Living Room",
+    "InitialLocation": "Grocery Store",
     "Locations": {
         "Living Room": {
-            "Body": "This is the front of my house , which is the living Room.",
+            "Body": "You are sitting at a cafe waitng for ",
             "Choices": [
                 {
                     "Text": "Forward",

@@ -1,0 +1,58 @@
+{
+    "Title": "My Home!",
+    "Credits": "Created by Nathan Gonzales (ngonza81@ucsc.edu).",
+    "InitialLocation": "Living Room",
+    "Locations": {
+        "Living Room": {
+            "Body": "This is the front of my house , which is the living Room.",
+            "Choices": [
+                {
+                    "Text": "Forward",
+                    "Target": "Kitchen"
+                }
+            ]
+        },
+        "Kitchen": {
+            "Body": "This is the Kitchen, where I make food and matcha.",
+            "Choices": [
+                {
+                    "Text": "Up the floor!",
+                    "Target": "Upstairs"
+                },
+                {
+                    "Text": "Backwards",
+                    "Target": "Living Room"
+                }
+            ]
+        },
+        "Upstairs": {
+            "Body": "This is the upstairs, where my working desk is placed.",
+            "Choices": [
+                {
+                    "Text": "In my Room!",
+                    "Target": "My Room"
+                },
+                {
+                    "Text": "Backwards",
+                    "Target": "Kitchen"
+                }
+            ]
+        },
+        "My Room": {
+            "Body": "This is my room, where my comfy bed is placed.",
+            "Choices": [
+                {
+                    "Text": "Ending",
+                    "Target": "Beyond"
+                },
+                {
+                    "Text": "Backwards",
+                    "Target": "Upstairs"
+                }
+            ]
+        },
+        "Beyond": {
+            "Body": "Thanks for hanging out in my house!"
+        }
+    }
+}

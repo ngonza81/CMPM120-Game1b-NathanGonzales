@@ -3,56 +3,91 @@
     "Credits": "Created by Nathan Gonzales (ngonza81@ucsc.edu).",
     "InitialLocation": "Grocery Store",
     "Locations": {
-        "Living Room": {
-            "Body": "You are sitting at a cafe waitng for ",
+        "Grocery Store": {
+            "Body": "You are sitting at a grocery store, eating Choc Nuts while your Nanay and Tatay are tirelessly working. You, however, want to find some Cheetos!",
             "Choices": [
                 {
-                    "Text": "Forward",
-                    "Target": "Kitchen"
+                    "Text": "Let's leave the store!",
+                    "Target": "Night Market"
                 }
             ]
         },
-        "Kitchen": {
-            "Body": "This is the Kitchen, where I make food and matcha.",
+        "Night Market": {
+            "Body": "You are now in the night market. Time to find some Cheetos!",
             "Choices": [
                 {
-                    "Text": "Up the floor!",
-                    "Target": "Upstairs"
+                    "Text": "To the Karoke Stand",
+                    "Target": "Karoke"
                 },
                 {
-                    "Text": "Backwards",
-                    "Target": "Living Room"
-                }
-            ]
-        },
-        "Upstairs": {
-            "Body": "This is the upstairs, where my working desk is placed.",
-            "Choices": [
-                {
-                    "Text": "In my Room!",
-                    "Target": "My Room"
+                    "Text": "To the Senor Sisig Stand",
+                    "Target": "Senor Sisig"
                 },
                 {
-                    "Text": "Backwards",
-                    "Target": "Kitchen"
-                }
-            ]
-        },
-        "My Room": {
-            "Body": "This is my room, where my comfy bed is placed.",
-            "Choices": [
-                {
-                    "Text": "Ending",
-                    "Target": "Beyond"
+                    "Text": "To the Ube Cafe Stand",
+                    "Target": "Ube Cafe"
                 },
                 {
-                    "Text": "Backwards",
-                    "Target": "Upstairs"
+                    "Locked": true, 
+                    "Text": "On my way to get my Cheetos!",
+                    "Target": "Luckys"
                 }
             ]
         },
-        "Beyond": {
-            "Body": "Thanks for hanging out in my house!"
+        "Karoke": {
+            "Body": "This is the stand to sing your heart out!",
+            "Choices": [
+                {
+                    "Text": "Grab the Mic and Sing!",
+                    "Response": "You sing really well! Some man loves your singing voice!",
+                    "BeenVisited": false,
+                    "Target": "Karoke"
+                },
+                {
+                    "Text": "Go back to front",
+                    "Target": "Night Market"
+                },
+                {
+                    "Locked": true,
+                    "Text": "Where is the Cheetos?",
+                    "Response": "The Cheetos could be found in a Luckys, near the pizza stand!",
+                    "BeenVisited": false,
+                    "Target": "Night Market"
+                }
+            ]
+        },
+        "Senor Sisig": {
+            "Body": "This is Senor Sisig, the best place to get your Sisig and Adobo!",
+            "Choices": [
+                {
+                    "Text": "Do you know where I can find some Cheetos?",
+                    "Response": "Uhh I'm sorry kid. I don't think there's any nearby",
+                    "BeenVisited": false,
+                    "Target": "Senor Sisig"
+                },
+                {
+                    "Text": "Go back to front",
+                    "Target": "Night Market"
+                }
+            ]
+        },
+        "Ube Cafe": {
+            "Body": "This is the Ube Cafe, a place to get your Ube and other Filipino drinks!",
+            "Choices": [
+                {
+                    "Text": "Where do I find Cheetos?",
+                    "Response": "Oh sweetie I actually don't know. I'm sorry.",
+                    "BeenVisited": false,
+                    "Target": "Night Market"
+                },
+                {
+                    "Text": "Go back to front",
+                    "Target": "Night Market"
+                }
+            ]
+        },
+        "Luckys": {
+            "Body": "As you approach the Luckys to claim your prize, your parents find you alone and force you give up your search, as there is always food at home."
         }
     }
 }

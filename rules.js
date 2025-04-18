@@ -10,18 +10,18 @@ class Start extends Scene {
 }
 
 class Location extends Scene {
+
     create(key) {
-        let locationData = key;
-        //this.engine.show("Body text goes here"); replace this text by the Body of the location data
-        this.engine.show(this.engine.storyData.Locations[locationData]["Body"]); //Looks at 
+        let locationData = key; // Given Location Data
+        this.engine.show(this.engine.storyData.Locations[locationData]["Body"]); //Shows text by the body of the location data
         
-        //if(true) { // TODO: check if the location has any Choices
-        if(this.engine.storyData.Locations[locationData]["Choices"] !== undefined) {
-            //for(let choice of ["example data"]) { // TODO: loop over the location's Choices
-            for(let theChoice of this.engine.storyData.Locations[locationData]["Choices"]) {
-                //this.engine.addChoice("action text"); // TODO: use the Text of the choice
-                this.engine.addChoice(theChoice.Text, theChoice);
-                // TODO: add a useful second argument to addChoice so that the current code of handleChoice below works
+        if(this.engine.storyData.Locations[locationData]["Choices"] !== undefined) { // Making sure the location has any choices
+            for(let theChoice of this.engine.storyData.Locations[locationData]["Choices"]) { // Looping over location choices
+                if (theChoice.BeenVisited === true || theChoice.Locked === true) { //If nodes have been visited already or is locked
+                    continue;  
+                } else {
+                    this.engine.addChoice(theChoice.Text, theChoice); 
+                }
             }
         } else {
             this.engine.addChoice("The end.")
@@ -29,8 +29,15 @@ class Location extends Scene {
     }
 
     handleChoice(choice) {
-        if(choice) {
-            this.engine.show("&gt; "+choice.Text);
+        if(choice) { // Fix this
+            if (choice.BeenVisited === false) {
+                this.engine.show("&gt; "+choice.Text); 
+                this.engine.show("&gt; "+choice.Response);
+                choice.BeenVisited = true;
+            } else {
+                this.engine.show("&gt; "+choice.Text);
+                this.engine.show
+            }
             this.engine.gotoScene(Location, choice.Target);
         } else {
             this.engine.gotoScene(End);

@@ -1,3 +1,8 @@
+// Nathan Gonzales
+// April 18, 2025 
+// Key located in Karoke location (should have Locked1 & Locked2 choices in them)
+
+
 class Start extends Scene {
     create() {
         this.engine.setTitle(this.engine.storyData.Title) //Showing title of story

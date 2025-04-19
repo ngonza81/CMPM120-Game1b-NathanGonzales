@@ -49,7 +49,7 @@
                 },
                 {
                     "Locked1": true,
-                    "Text": "Where is the Cheetos?",
+                    "Text": "Where is the Cheetos?", 
                     "Response": "The Cheetos could be found in a Luckys, near the pizza stand!",
                     "BeenVisited": false,
                     "Target": "Night Market"
@@ -60,7 +60,7 @@
             "Body": "This is Senor Sisig, the best place to get your Sisig and Adobo!",
             "Choices": [
                 {
-                    "Text": "Do you know where I can find some Cheetos?",
+                    "Text": "Do you know where I can find some Cheetos?", 
                     "Response": "Uhh I'm sorry kid. I don't think there's any nearby",
                     "BeenVisited": false,
                     "Target": "Senor Sisig"
@@ -81,7 +81,7 @@
                     "Target": "Ube Cafe"
                 },
                 {
-                    "Text": "Grab a drink",
+                    "Text": "Grab a drink", 
                     "Response": "You grabbed a drink! You got an Iced Ube latte and it was very delicious!",
                     "BeenVisited": false,
                     "Target": "Ube Cafe"

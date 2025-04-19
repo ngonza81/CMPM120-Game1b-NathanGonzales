@@ -28,7 +28,7 @@
                     "Target": "Ube Cafe"
                 },
                 {
-                    "Locked": true, 
+                    "Locked2": true, 
                     "Text": "On my way to get my Cheetos!",
                     "Target": "Luckys"
                 }
@@ -48,7 +48,7 @@
                     "Target": "Night Market"
                 },
                 {
-                    "Locked": true,
+                    "Locked1": true,
                     "Text": "Where is the Cheetos?",
                     "Response": "The Cheetos could be found in a Luckys, near the pizza stand!",
                     "BeenVisited": false,
@@ -78,7 +78,13 @@
                     "Text": "Where do I find Cheetos?",
                     "Response": "Oh sweetie I actually don't know. I'm sorry.",
                     "BeenVisited": false,
-                    "Target": "Night Market"
+                    "Target": "Ube Cafe"
+                },
+                {
+                    "Text": "Grab a drink",
+                    "Response": "You grabbed a drink! You got an Iced Ube latte and it was very delicious!",
+                    "BeenVisited": false,
+                    "Target": "Ube Cafe"
                 },
                 {
                     "Text": "Go back to front",
